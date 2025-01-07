@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>protfolio</title>
+    <style type="text/css">
+nav{
+  box-shadow: 0 4px 8px 0;
+  height: 60px;
+  width: 100%;
+  position: fixed;
+  border-radius: 30px;
+  display: flex;
+flex-direction: row;
+justify-content: space-between;
+background-color: rgb(11 1 25);
+}
+
+ul{
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  padding-right: 30px;
+}
+  a{
+  justify-content: space-between;
+  margin-left: 15px;
+ 
+}
+.logo{
+  padding-left: 25px;
+  margin-top: 15px;
+  color: blue;
+}
+.logo:hover{
+  color:red;
+}
+
+body{
+background-color: rgb(11 1 25);
+
+}
+.room_for_img{
+  padding-top: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.img{
+  width: 500px;
+  height: 220px;
+  border-radius: 20px;
+  
+}
+.text{
+  font-size: 17px;
+  max-width: 340px;
+
+}
+.main{
+  width: 800px;
+  text-align: center;
+  margin-left: 290px;
+  border: solid 2px;
+  background-image: url('images (17).jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media (min-width:599px){
+  .main{
+    margin-left: 70px;
+    max-width: 400px;
+
+  }
+  .img{
+max-width: 200px;
+height: 120px;
+  }
+  .text{
+    font-size: 12px;
+    max-width: 250px;
+  }
+}
+@media (max-width:430px){
+  .main{
+    margin-left: 20px;
+    max-width: 370px;
+background-image: none;
+border: none;
+  }
+  .img{
+max-width: 400px;
+height: 120px;
+margin-left: -10px;
+height: 250px;
+  }
+  .text{
+    font-size: 20px;
+    color: white;
+  }
+  .logo{
+    color: aliceblue;
+  }
+.room_for_img{
+  display: flex;
+  flex-direction: column;
+}
+  nav, .logo, nav ul{
+  font-size: 11px;
+  color: white;
+  }
+  a{
+    color: aliceblue;
+  }
+  .a{
+    margin-top: 20px;
+  }
+}
+
+    </style>
+</head>
+<body>
+  <nav>
+    <div class="logo surmoil">
+     <a  href="index.html">EL-stephen</a>
+      </div>
+      <div class="nav-left surmoil">
+        <ul>
+         <li><a class="a" href="#">HOME</a></li>
+         <li><a class="a" href="#">ABOUT ME</a></li>
+         <li><a class="a" href="#">CONTACTS</a></li>
+         <li><a class="a" href="#">PRIVACY</a></li>
+      <li><a href="#"> </a></li>    
+        </ul>
+      </div>
+  </nav>
+
+  <div class="main">
+    <div class="room_for_img surmoil">
+      <p class="text">I am Stephen Abubakar alias EL-Stephen.<br>
+        I am 19 years old and a SHS graduate as well.
+        <br> I completed Achimota School in essence one of the most popular and great schools in Ghana.<br>
+        I was a science student.<br>
+        I do play video games in my leisure times.</p>
+     <img class="img" src="download-removebg-preview.png">
+    </div>
+  </div>
+   <a href="m.youtube.com/freeze-core"><button style="margin-top: 15px; height:39px; font-size: 20px;
+    border-radius: 20px; background-color: green;color:white; 
+    box-shadow: 0 4px 8px 0">Learn more about me</button></a>
+    <form style="color:white">
+      <p style="color:white; margin-left:15px;">I WOULD LIKE IT IF YOU WANT TO BE MY FRIEND</p>
+<input style="text-align: center; border-radius:7px; margin-left: 19px; height:25px; " type="text" name="fn" placeholder="Firstname">
+<input style="text-align: center; border-radius:7px; height:25px;" type="text" name="sn" placeholder="Secondname">
+<input style=" margin-top:20px; width: 300px; margin-left:50px; background-color: green; border-radius:15px; height:35px;"type="submit" value="submit" class="submit">
+    </form>
+    <footer>
+      copy right 
+    </footer>
+</body>
+</html>
