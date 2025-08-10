@@ -1,216 +1,33 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>protfolio</title>
-    <style type="text/css">
-nav{
-  box-shadow: 0 4px 8px 0;
-  height: 60px;
-  width: 100%;
-  position: fixed;
-  border-radius: 30px;
-  display: flex;
-flex-direction: row;
-justify-content: space-between;
-background-color: rgb(11 1 25);
-}
-
-ul{
-  display: flex;
-  flex-direction: row;
-  list-style: none;
-  padding-right: 30px;
-}
-  a{
-  justify-content: space-between;
-  margin-left: 15px;
- 
-}
-.logo{
-  padding-left: 25px;
-  margin-top: 15px;
-  color: blue;
-}
-.logo:hover{
-  color:red;
-}
-
-body{
-background-color: rgb(11 1 25);
-
-}
-.room_for_img{
-  padding-top: 100px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-.img{
-  width: 500px;
-  height: 220px;
-  border-radius: 20px;
-  
-}
-.text{
-  font-size: 17px;
-  max-width: 340px;
-
-}
-.main{
-  width: 800px;
-  text-align: center;
-  margin-left: 290px;
-  border: solid 2px;
-  background-image: url('images (17).jpeg');
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-@media (min-width:599px){
-  .main{
-    margin-left: 70px;
-    max-width: 400px;
-
-  }
-  .img{
-max-width: 200px;
-height: 120px;
-  }
-  .text{
-    font-size: 12px;
-    max-width: 250px;
-  }
-}
-@media (max-width:480px){
-  .main{
-    margin-left: 20px;
-    max-width: 370px;
-background-image: none;
-border: none;
-  }
-  .img{
-max-width: 300px;
-height: 120px;
-margin-left: -10px;
-height: 250px;
-  }
-  .text{
-    font-size: 20px;
-    color: white;
-  }
-  .logo{
-    color: aliceblue;
-  }
-.room_for_img{
-  display: flex;
-  flex-direction: column;
-}
-  nav, .logo, nav ul{
-  font-size: 11px;
-  color: white;
-  }
-  a{
-    color: aliceblue;
-  }
-  .a{
-    margin-top: 20px;
-  }
-}
-@media (max-width:320px){
-  nav{
-    height: 20px;
-width: 100%;;
-  }
-  .main{
-    margin-left: 20px;
-    max-width: 320px;
-background-image: none;
-border: none;
-  }
-  .img{
-max-width: 310px;
-height: 0px;
-margin-left: -25px;
-height: 250px;
-  }
-  .text{
-    font-size: 15px;
-    color: white;
-    max-width: 280px;
-    margin-top: -40px;
-    margin-left: -14px;
-  }
-  body{
-    max-width: 320px;
-  }
-  .logo{
-    color: aliceblue;
-    margin-top: -0.01px;
-  }
-.room_for_img{
-  display: flex;
-  flex-direction: column;
-}
-  nav, .logo, nav ul{
-  font-size: 5px;
-  color: white;
-  }
-  a{
-    color: aliceblue;
-  }
-  .a{
-    margin-top: 20px;
-  }
-  .s{
-    width: 20px;
-    margin-left: -20px;
-    display: none;
-  }
-  .creative{
-    display: non;
-  }
-}
-
-    </style>
-</head>
-<body>
-  <nav>
-    <div class="logo surmoil">
-     <a  href="index.html">EL-stephen</a>
-      </div>
-      <div class="nav-left surmoil">
-        <ul>
-         <li><a class="a" href="#">HOME</a></li>
-         <li><a class="a" href="#">ABOUT ME</a></li>
-         <li><a class="a" href="#">CONTACTS</a></li>
-         <li><a class="a" href="#">PRIVACY</a></li>
-      <li><a href="#"> </a></li>    
-        </ul>
-      </div>
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>QRT Coin - Home</title><link rel="icon" href="assets/images/qrt-logo.png"><link href="assets/css/style.css" rel="stylesheet"></head><body>
+<div class="container">
+  <header class="header">
+    <div class="brand"><img src="assets/images/qrt-logo.png" alt="QRT"><div><h1>QRT Coin</h1><div class="small">Watch Ads • Earn QRT • Withdraw</div></div></div>
+    <div style="display:flex;gap:10px;align-items:center"><div class="lang">English</div><a class="btn" href="login.html">Login</a><a class="btn primary" href="#" data-action="signup">Get Started</a></div>
+  </header>
+  <nav class="nav">
+    <a href="index.html">Home</a><a href="about.html">About</a><a href="how.html">How It Works</a><a href="blog.html">Blog</a><a href="contact.html">Contact</a><a class="cta" href="dashboard.html">Dashboard</a>
   </nav>
-
-  <div class="main">
-    <div class="room_for_img surmoil">
-      <p class="text">I am Stephen Abubakar alias EL-Stephen.<br>
-        I am 19 years old and a SHS graduate as well.
-        <br> I completed Achimota School in essence one of the most popular and great schools in Ghana.<br>
-        I was a science student.<br>
-        I do play video games in my leisure times.</p>
-     <img class="img" src="download-removebg-preview.png">
-    </div>
+  <div class="grid">
+    <main class="main">
+      <section class="card hero" id="hero">
+        <div>
+          <div class="title">Welcome to QRT Coin — Earn while you watch</div>
+          <p>QRT Coin lets you earn tokens by watching short videos and installing partner apps. Convert rewards to cash via crypto or local payout options.</p>
+          <div class="actions"><button class="btn primary">Start Earning</button><button class="btn" onclick="document.location='how.html'">Learn How</button></div>
+          <div class="stats"><div class="stat"><div class="small">Daily Ads</div><strong>10</strong></div><div class="stat"><div class="small">Daily Installs</div><strong>3</strong></div><div class="stat"><div class="small">Referral</div><strong>15 QRT</strong></div></div>
+        </div>
+        <div style="min-width:260px"><div class="adbox">Ad Space<br><small>Paste Adsterra code here later</small></div></div>
+      </section>
+      <section class="card" id="about"><h3>About QRT Coin</h3><p class="small">QRT Coin is a reward platform that distributes its native token (QRT) to users who engage with short-form video advertisements and partner applications. Our mission is to create a fair reward economy that compensates users for their attention.</p></section>
+      <section class="card" id="how"><h3>How It Works</h3><ol class="small"><li>Sign up with your email</li><li>Watch up to 10 ads per day</li><li>Install partner apps to earn bonus QRT (max 3/day)</li><li>Push rewards to your QRT wallet and withdraw via Binance P2P or Payoneer</li></ol></section>
+      <section class="card" id="blog-preview"><h3>From the Blog</h3><div class="article"><img src="assets/images/qrt-logo.png" alt=""><div><strong>How to Earn QRT Coins Easily</strong><p class="small">Quick tips to start earning today...</p></div></div><div class="article"><img src="assets/images/qrt-logo.png" alt=""><div><strong>The Future of Digital Advertising</strong><p class="small">Why ad rewards are reshaping attention economy...</p></div></div><div class="article"><img src="assets/images/qrt-logo.png" alt=""><div><strong>QRT Coin: Rewards for Your Time</strong><p class="small">Understanding value exchange between advertisers and users...</p></div></div></section>
+    </main>
+    <aside class="aside">
+      <div class="card"><h3>Wallet</h3><p class="small">Balance</p><div style="font-size:20px;font-weight:700;color:var(--gold1)">540 QRT</div></div>
+      <div class="card"><h3>Daily Progress</h3><p class="small">Ads Watched: <strong>4/10</strong><br>Apps Installed: <strong>1/3</strong></p></div>
+      <div class="card"><h3>Ad Preview</h3><div class="adbox">Ad Space</div></div>
+    </aside>
   </div>
-   <a href="m.youtube.com/freeze-core"><button style="margin-top: 15px; height:39px; font-size: 20px;
-    border-radius: 20px; background-color: green;color:white; 
-    box-shadow: 0 4px 8px 0">Learn more about me</button></a>
-    <form style="color:white">
-      <p style="color:white; margin-left:15px;">I WOULD LIKE IT IF YOU WANT TO BE MY FRIEND</p>
-<input style="text-align: center; border-radius:7px; margin-left: 19px; height:25px; " type="text" name="fn" placeholder="Firstname">
-<input style="text-align: center; border-radius:7px; height:25px;" type="text" name="sn" placeholder="Secondname"><p class="creative"></p>
-<input class="s" style=" margin-top:20px; width: 300px; margin-left:50px; background-color: green; border-radius:15px; height:35px;"type="submit" value="submit" class="submit">
-    </form>
-    <footer>
-      copy right 
-    </footer>
-</body>
-</html>
+  <footer class="footer">© 2025 QRT Coin • Terms • Privacy • Contact</footer>
+</div><script src="assets/js/main.js"></script></body></html>
